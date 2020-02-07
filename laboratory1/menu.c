@@ -11,8 +11,8 @@ int enter_task_number()
 	do
 	{
 		printf("\n\nPress the number of task you want to test ( 1 - 4 ) : ");
-		scanf("%s", &task_number);
-		getchar();
+		gets(task_number);
+
 	}	while(!(isintnumber(task_number) && ispositivenumber(task_number)));
 	
 	return atoi(task_number);
@@ -95,12 +95,12 @@ int main(int argc, char *argv[])
 				}
 				
 		}
-		printf("\n\nIf you want to continue testing program, press Space bar ... ");
+		printf("\n\nIf you want to continue testing program, press c button ... ");
 		scanf("%c", &cont);
-//		getchar();
+		getchar();
 		
 		
-	}   while(cont==' ');
+	}   while(cont=='c' || cont=='C');
 		
 	return 0;
 }

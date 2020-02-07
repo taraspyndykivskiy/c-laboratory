@@ -10,8 +10,9 @@ void program1 ()
 	do
 	{
 		printf("\n\nEnter the value of smaller radius : ");
-		scanf("%s", &smaller_radius);
-		getchar();
+		gets(smaller_radius);
+//		scanf("%s", &smaller_radius);
+//		getchar();
 		if((!(isnumber(smaller_radius)) || (isnumber(smaller_radius) && !ispositivenumber(smaller_radius))))
 			printf("\n\nYou've entered a wrong value of radius\n\n");
 		
@@ -23,8 +24,9 @@ void program1 ()
 	do
 	{
 		printf("\n\nEnter the value of bigger radius : ");
-		scanf("%s", &bigger_radius);		
-		getchar();
+		gets(bigger_radius);
+//		scanf("%s", &bigger_radius);		
+//		getchar();
 		if(!(isnumber(bigger_radius)) || (isnumber(bigger_radius) && !ispositivenumber(bigger_radius)))
 			printf("\n\nYou've entered a wrong value of radius\n\n");
 	} while(!(isnumber(bigger_radius)) || (isnumber(bigger_radius) && !ispositivenumber(bigger_radius)));

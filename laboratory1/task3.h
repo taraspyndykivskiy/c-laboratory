@@ -10,28 +10,32 @@ void program3_packing()
 	do
 	{
 		printf("\n\nEnter the number of block ( 0 - 255 ): ");
-		scanf("%s", &block_number);
-		getchar();
+		gets(block_number);
+//		scanf("%s", &block_number);
+//		getchar();
 	}	while((!ispositivenumber(block_number) || ( ispositivenumber(block_number) && ( atoi(block_number)<0 ||  atoi(block_number)>255 )))||(!isintnumber(block_number)));
 	do
 	{
 		printf("\n\nEnter the state of read access ( 0 - 1 ): ");
-		scanf("%s", &read_access);
-		getchar();
+		gets(read_access);
+//		scanf("%s", &read_access);
+//		getchar();
 		
 	}while((!ispositivenumber(read_access) || ( ispositivenumber(read_access) && ( atoi(read_access)<0 ||  atoi(read_access)>1 )))||(!isintnumber(read_access)));
 	
 	do
 	{
 		printf("\n\nEnter the state of write access ( 0 - 1 ): ");
-		scanf("%s", &write_access);
-		getchar();
+		gets(write_access);
+//		scanf("%s", &write_access);
+//		getchar();
 	}	while((!ispositivenumber(write_access) || ( ispositivenumber(write_access) && ( atoi(write_access)<0 ||  atoi(write_access)>1 )))||(!isintnumber(write_access)));
 	do
 	{
 		printf("\n\nEnter the segment size ( 0 - 63 ): ");
-		scanf("%s", &segment_size);
-		getchar();
+		gets(segment_size);
+//		scanf("%s", &segment_size);
+//		getchar();
 	}	while((!isnumber(segment_size) || ( isnumber(segment_size) && ( atoi(segment_size)<0 ||  atoi(segment_size)>63 )))||(!isintnumber(segment_size)));
 	
 	int block_number_int, segment_size_int;
@@ -57,8 +61,9 @@ void program3_unpacking()
 	do
 	{
 		printf("\n\nEnter hexadecimal number ( 0 - FFFF ) : ");
-		scanf("%s", &unitstatecode);
-		getchar();
+		gets(unitstatecode);
+//		scanf("%s", &unitstatecode);
+//		getchar();
 	} while(!ishexadecimalnumber(unitstatecode) || (ishexadecimalnumber(unitstatecode) && strlen(unitstatecode)>4));
 	
 	int unitstatecode_int;

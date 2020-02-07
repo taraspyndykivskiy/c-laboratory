@@ -21,8 +21,9 @@ float enter_data(int side_number)
 				printf("Error");
 				break;
 		}
-		scanf("%s", &side_length);
-		getchar();
+		gets(side_length);
+//		scanf("%s", &side_length);
+//		getchar();
 		if(!(isnumber(side_length))  || (isnumber(side_length) && (!ispositivenumber(side_length)))|| (atof(side_length)==0))
 		{
 			if((!ispositivenumber(side_length) && isnumber(side_length)) || (atof(side_length)==0))
