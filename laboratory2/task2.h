@@ -1,6 +1,7 @@
 #include<stdio.h>
 #include<time.h>
 //#include"isnumber.h"
+
 void program2()
 {
 	srand(time(0));
