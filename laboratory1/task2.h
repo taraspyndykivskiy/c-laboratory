@@ -1,6 +1,5 @@
 #include<stdio.h>
 #include<math.h>
-//#include"isnumber.h"
 float enter_data(int side_number)
 {
 	char side_length[100];
